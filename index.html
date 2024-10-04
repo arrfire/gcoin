@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandhi Family NFT Collection - A Journey of Peace</title>
+    <style>
+        :root {
+            --primary-color: #FF9933;  /* Saffron from Indian flag */
+            --secondary-color: #138808;  /* Green from Indian flag */
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --accent-color: #000080;  /* Navy blue for a regal touch */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
+            background: url('/api/placeholder/1200/800') no-repeat center center/cover;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #000066;
+        }
+        
+        .nft-breakdown {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .nft-breakdown h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--secondary-color);
+        }
+        
+        .nft-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+        
+        .nft-item {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .nft-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .nft-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Gandhi NFTs</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#nft-breakdown">NFT Breakdown</a>
+                <a href="#buy">Buy Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                <h1>Gandhi Family NFT Collection</h1>
+                <p>Embark on a journey of peace and progress with our exclusive NFT collection featuring the Gandhi family. Own a piece of history and support the principles of non-violence and social change.</p>
+                <a href="https://pump.fun/Gpn5AFUUjMtdoJyh8c1WYSpdEFnxi5S8QNnDLm6Dpump" class="cta-button">Buy on pump.fun</a>
+            </div>
+        </section>
+
+        <section id="nft-breakdown" class="nft-breakdown">
+            <div class="container">
+                <h2>NFT Breakdown</h2>
+                <div class="nft-grid">
+                    <div class="nft-item">
+                        <div class="nft-icon">🕊️</div>
+                        <h3>Mahatma Gandhi</h3>
+                        <p>1,000 NFTs</p>
+                    </div>
+                    <div class="nft-item">
+                        <div class="nft-icon">🌟</div>
+                        <h3>Indira Gandhi</h3>
+                        <p>1,000 NFTs</p>
+                    </div>
+                    <div class="nft-item">
+                        <div class="nft-icon">🌱</div>
+                        <h3>Rajiv Gandhi</h3>
+                        <p>1,000 NFTs</p>
+                    </div>
+                    <div class="nft-item">
+                        <div class="nft-icon">💪</div>
+                        <h3>Sonia Gandhi</h3>
+                        <p>1,000 NFTs</p>
+                    </div>
+                    <div class="nft-item">
+                        <div class="nft-icon">🚀</div>
+                        <h3>Rahul Gandhi</h3>
+                        <p>1,000 NFTs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
